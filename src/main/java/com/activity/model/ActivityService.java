@@ -7,7 +7,7 @@ public class ActivityService {
     private ActivityDAO dao;
 
     public ActivityService() {
-        dao = new ActivityJDBCDAO();
+        dao = new ActivityHibernateDAO();
     }
 
     public ActivityVO addActivity(Integer activityTypeId, Integer memberId, String activityTitle,
